@@ -57,6 +57,16 @@
 }
 
 @media screen and (min-width: 768px) {
+  .page-header {
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 736px;
+  }
+  .auth-nav-items {
+    display: flex;
+  }
+
   .nav-burger-button {
     display: none;
   }
@@ -142,6 +152,9 @@
 }
 
 @media screen and (min-width: 1200px) {
+  .page-header {
+    max-width: 1128px;
+  }
   .logo {
     margin-right: 76px;
   }

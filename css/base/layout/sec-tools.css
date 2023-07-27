@@ -17,6 +17,8 @@
 }
 
 .hidden-title {
+  max-width: 428px;
+  margin: 0 auto;
   padding: 96px 0;
 }
 
@@ -46,18 +48,68 @@
 }
 
 @media screen and (min-width: 768px) {
+  .hidden-title {
+    max-width: 736px;
+  }
   .tool-items {
-    justify-content: center;
-    align-items: flex-start;
+    min-width: 736px;
     flex-direction: row;
+    flex-wrap: wrap;
+    gap: 72px 24px;
+  }
+  .tool-items-function {
+    display: block;
+
+    width: 356px;
+  }
+
+  .tool-text {
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hidden-title {
+    max-width: 1128px;
+    padding: 120px 0;
+  }
+
+  .tool-items {
+    flex-wrap: nowrap;
+    row-gap: 0;
+  }
+  .feature {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 112px;
+    margin-bottom: 8px;
+    border-radius: 4px;
+    background: var(--cloud, #f4f4fd);
+  }
+  .tool-items-function {
+    max-width: 264px;
+  }
+
+  .tool-item {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+}
+
+/* .hidden-title {
+    max-width: 736px;
+  }
+  .tool-items {
+    display: flex;
     flex-wrap: wrap;
   }
 
   .tool-items-function {
-    /* display: flex;
-    flex-direction: column; */
+    display: flex;
+    flex-direction: column;
     margin-right: 24px;
-    max-width: 356;
+    width: 356px;
   }
 
   .tool-items-function:last-child {
@@ -65,53 +117,22 @@
   }
 }
 
-/* .hidden-title {
-  padding: 120px 0;
-}
-.tool-items {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-}
+@media screen and (min-width: 1200px) {
+  .feature {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 112px;
+    margin-bottom: 8px;
+    border-radius: 4px;
+    background: var(--cloud, #f4f4fd);
+  }
+  .tool-items-function {
+    max-width: 264px;
+  }
 
-.tool-items-function {
-  display: flex;
-  flex-direction: column;
-  margin-right: 24px;
-  max-width: 264px;
-}
-
-.tool-items-function:last-child {
-  margin-right: 0;
-}
-.feature {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 112px;
-  margin-bottom: 8px;
-  border-radius: 4px;
-  background: var(--cloud, #f4f4fd);
-}
-
-.tool-item {
-  margin-bottom: 8px;
-  color: var(--dark);
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-}
-.tool-text {
-  margin-top: 8px;
-}
-
-.tool-item-text {
-  color: var(--text);
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
+  .tool-item {
+    font-size: 20px;
+    line-height: 1.2;
+  }
 } */

@@ -1,0 +1,115 @@
+.section-team {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 428px;
+  padding: 96px 0;
+  background-color: var(--light);
+}
+.title-team {
+  text-align: center;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.11;
+  letter-spacing: 0.72px;
+  text-transform: capitalize;
+  color: var(--dark);
+  margin-bottom: 72px;
+}
+
+.section-title-team {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-team {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 72px;
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+  background-color: var(--white-background);
+}
+
+.card-team-list {
+  padding: 32px 0;
+}
+.card-team-item {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.4px;
+  color: var(--dark);
+  margin-bottom: 8px;
+}
+.card-team-text {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.32px;
+  color: var(--text);
+}
+.team-media {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  list-style: none;
+  gap: 24px;
+  margin-top: 8px;
+}
+
+.team-media-list {
+  width: 40px;
+  height: 40px;
+}
+.team-social-media {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: var(--primary-brand);
+  border-radius: 50%;
+  transition-property: background-color;
+  transition-duration: var(--transition-dur);
+  transition-timing-function: var(--transition-func);
+}
+
+.team-social-media:hover,
+.team-social-media:focus {
+  background-color: var(--pressed-state);
+}
+.team-social-media-icon {
+  fill: var(--light);
+}
+
+@media screen and (min-width: 768px) {
+  .section-team {
+    max-width: 736px;
+  }
+  .section-title-team {
+    flex-direction: row;
+    gap: 64px 24px;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section-team {
+    max-width: 1440px;
+  }
+  .section-title-team {
+    column-gap: 24px;
+    flex-wrap: nowrap;
+  }
+}
