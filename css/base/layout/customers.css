@@ -17,18 +17,15 @@
 }
 .customers-logo-list {
   display: flex;
+  width: 100%;
   flex-wrap: wrap;
+  gap: 72px 16px;
 }
 
 .customers-list {
-  width: 190px;
+  flex: 190px;
   height: 88px;
-  margin-right: 16px;
-  margin-bottom: 72px;
-}
-.customers-list:nth-child(2n) {
-  margin-right: 0;
-  margin-bottom: 0;
+  gap: 72px 16px;
 }
 
 .customers-logo-icons {
