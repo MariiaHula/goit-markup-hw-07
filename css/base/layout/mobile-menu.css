@@ -1,167 +1,169 @@
-.mobile-menu-window {
-  position: fixed;
-  opacity: 1;
-  visibility: visible;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  visibility: hidden;
-  opacity: 0;
-  pointer-events: none;
-  transition-property: opacity, visibility;
-  transition-duration: var(--transition-dur);
-  transition-timing-function: var(--transition-func);
-}
-.mobile-menu-window.is-open {
-  opacity: 1;
-  visibility: visible;
-  pointer-events: auto;
-}
-.mobile-menu-form {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 428px;
-  min-height: 584px;
-  padding-left: 40px;
-  padding-right: 35px;
-  padding-top: 80px;
-  padding-bottom: 40px;
-  transition-property: transform;
-  transition-duration: var(--transition-dur);
-  transition-timing-function: var(--transition-func);
-  background-color: var(--modal-background);
-  box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08),
-    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
-    0px 2px 1px 0px rgba(46, 47, 66, 0.08);
-}
+@media screen and (max-width: 767px) {
+  .mobile-menu-window {
+    position: fixed;
+    opacity: 1;
+    visibility: visible;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+    transition-property: opacity, visibility;
+    transition-duration: var(--transition-dur);
+    transition-timing-function: var(--transition-func);
+  }
+  .mobile-menu-window.is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+  .mobile-menu-form {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 428px;
+    min-height: 584px;
+    padding-left: 40px;
+    padding-right: 35px;
+    padding-top: 80px;
+    padding-bottom: 40px;
+    transition-property: transform;
+    transition-duration: var(--transition-dur);
+    transition-timing-function: var(--transition-func);
+    background-color: var(--modal-background);
+    box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08),
+      0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+      0px 2px 1px 0px rgba(46, 47, 66, 0.08);
+  }
 
-.mobile-menu-close-button {
-  position: absolute;
-  top: 24px;
-  right: 24px;
-  display: flex;
-  background-color: var(--accent);
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 50%;
-  width: 24px;
-  height: 24px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0;
-  cursor: pointer;
-  transition-property: border, background-color;
-  transition-duration: var(--transition-dur);
-  transition-timing-function: var(--transition-func);
-}
+  .mobile-menu-close-button {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    display: flex;
+    background-color: var(--accent);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    cursor: pointer;
+    transition-property: border, background-color;
+    transition-duration: var(--transition-dur);
+    transition-timing-function: var(--transition-func);
+  }
 
-.mobile-menu-close-button {
-  fill: var(--dark);
-  transition-property: fill;
-  transition-duration: var(--transition-dur);
-  transition-timing-function: var(--transition-func);
-}
+  .mobile-menu-close-button {
+    fill: var(--dark);
+    transition-property: fill;
+    transition-duration: var(--transition-dur);
+    transition-timing-function: var(--transition-func);
+  }
 
-.mobile-menu-close-button:focus {
-  background-color: var(--pressed-state);
-  border: none;
-}
+  .mobile-menu-close-button:focus {
+    background-color: var(--pressed-state);
+    border: none;
+  }
 
-.mobile-menu-close-button:focus .mobile-menu-close-back-icon {
-  fill: var(--white-background);
-}
-/* =====MOBILE-MENU NAVIGATION========= */
-.mobile-menu-navigation {
-  margin-bottom: 284px;
-}
-.mobile-menu-panel {
-  display: flex;
-  flex-direction: column;
-}
-.mobile-menu-link {
-  display: block;
-  font-size: 36px;
-  font-weight: 700;
-  line-height: 1.11;
-  letter-spacing: 0.72px;
-  text-transform: capitalize;
-  color: var(--dark);
-  margin-bottom: 40px;
-  transition-property: color;
-  transition-duration: var(--transition-dur);
-  transition-timing-function: var(--transition-func);
-}
-.mobile-menu-link:focus {
-  color: var(--pressed-state);
-}
-.mobile-menu-address-list {
-  display: flex;
-  flex-direction: column;
-}
-/* =======MOBILE-MENU ADDRESS=========== */
-.mobile-menu-tel-link {
-  display: block;
-  font-size: 36px;
-  font-weight: 700;
-  line-height: 1.11;
-  letter-spacing: 0.72px;
-  text-transform: capitalize;
-  margin-bottom: 40px;
-  color: var(--primary-brand);
-  transition-property: color;
-  transition-duration: var(--transition-dur);
-  transition-timing-function: var(--transition-func);
-}
-.mobile-menu-tel-link:focus {
-  color: var(--pressed-state);
-}
-.mobile-menu-email-link {
-  display: block;
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 1.2;
-  letter-spacing: 0.4px;
-  color: var(--text);
-  margin-bottom: 48px;
-  transition-property: color;
-  transition-duration: var(--transition-dur);
-  transition-timing-function: var(--transition-func);
-}
-.mobile-menu-email-link:focus {
-  color: var(--pressed-state);
-}
-/* ============MOBILE-MENU-SOCIAL-MEDIA=============== */
-.mobile-menu-social-media-list {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 56px;
-}
-.mobile-menu-social-media {
-  width: 40px;
-  height: 40px;
-}
+  .mobile-menu-close-button:focus .mobile-menu-close-back-icon {
+    fill: var(--white-background);
+  }
+  /* =====MOBILE-MENU NAVIGATION========= */
+  .mobile-menu-navigation {
+    margin-bottom: 284px;
+  }
+  .mobile-menu-panel {
+    display: flex;
+    flex-direction: column;
+  }
+  .mobile-menu-link {
+    display: block;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.11;
+    letter-spacing: 0.72px;
+    text-transform: capitalize;
+    color: var(--dark);
+    margin-bottom: 40px;
+    transition-property: color;
+    transition-duration: var(--transition-dur);
+    transition-timing-function: var(--transition-func);
+  }
+  .mobile-menu-link:focus {
+    color: var(--pressed-state);
+  }
+  .mobile-menu-address-list {
+    display: flex;
+    flex-direction: column;
+  }
+  /* =======MOBILE-MENU ADDRESS=========== */
+  .mobile-menu-tel-link {
+    display: block;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.11;
+    letter-spacing: 0.72px;
+    text-transform: capitalize;
+    margin-bottom: 40px;
+    color: var(--primary-brand);
+    transition-property: color;
+    transition-duration: var(--transition-dur);
+    transition-timing-function: var(--transition-func);
+  }
+  .mobile-menu-tel-link:focus {
+    color: var(--pressed-state);
+  }
+  .mobile-menu-email-link {
+    display: block;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.4px;
+    color: var(--text);
+    margin-bottom: 48px;
+    transition-property: color;
+    transition-duration: var(--transition-dur);
+    transition-timing-function: var(--transition-func);
+  }
+  .mobile-menu-email-link:focus {
+    color: var(--pressed-state);
+  }
+  /* ============MOBILE-MENU-SOCIAL-MEDIA=============== */
+  .mobile-menu-social-media-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 56px;
+  }
+  .mobile-menu-social-media {
+    width: 40px;
+    height: 40px;
+  }
 
-.mobile-social-media {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 100%;
-  padding: 8px;
-  background-color: var(--primary-brand);
-  border-radius: 50%;
-  transition-property: background-color;
-  transition-duration: var(--transition-dur);
-  transition-timing-function: var(--transition-func);
-}
+  .mobile-social-media {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    padding: 8px;
+    background-color: var(--primary-brand);
+    border-radius: 50%;
+    transition-property: background-color;
+    transition-duration: var(--transition-dur);
+    transition-timing-function: var(--transition-func);
+  }
 
-.mobile-social-media:focus {
-  background-color: var(--pressed-state);
-}
+  .mobile-social-media:focus {
+    background-color: var(--pressed-state);
+  }
 
-.mobile-social-media-icon {
-  fill: var(--light);
+  .mobile-social-media-icon {
+    fill: var(--light);
+  }
 }
