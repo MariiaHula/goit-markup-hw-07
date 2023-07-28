@@ -1,2 +1,3 @@
-# goit-markup-hw-02
-For-study-projects
+# goit-markup-hw-07
+
+Home work #7
