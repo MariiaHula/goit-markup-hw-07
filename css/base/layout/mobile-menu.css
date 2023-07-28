@@ -1,15 +1,13 @@
 @media screen and (max-width: 767px) {
   .mobile-menu-window {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
     position: fixed;
-    opacity: 1;
-    visibility: visible;
     top: 0;
     left: 0;
     width: 100%;
     height: 100vh;
-    visibility: hidden;
-    opacity: 0;
-    pointer-events: none;
     transition-property: opacity, visibility;
     transition-duration: var(--transition-dur);
     transition-timing-function: var(--transition-func);
@@ -165,5 +163,20 @@
 
   .mobile-social-media-icon {
     fill: var(--light);
+  }
+}
+@media screen and (min-width: 768px) {
+  .mobile-menu-window {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
   }
 }
