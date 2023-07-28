@@ -1,6 +1,6 @@
 .hero {
   width: 100%;
-  max-width: 428px;
+  max-width: 1440px;
   margin: 0 auto;
   background-color: var(--dark);
   background-image: linear-gradient(
@@ -84,8 +84,6 @@
 
 @media screen and (min-width: 768px) {
   .hero {
-    max-width: 736px;
-    margin: 0 auto;
     background-color: var(--dark);
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
@@ -119,8 +117,6 @@
 
 @media screen and (min-width: 1200px) {
   .hero {
-    max-width: 1158px;
-    margin: 0 auto;
     background-color: var(--dark);
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
