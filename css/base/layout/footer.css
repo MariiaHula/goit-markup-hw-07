@@ -1,7 +1,6 @@
 .page-footer {
   margin: 0 auto;
   padding: 96px 15px;
-  max-width: 428px;
   background-color: var(--dark);
 }
 
@@ -125,15 +124,17 @@
   justify-content: center;
   align-items: center;
   gap: 16px;
+  width: 100%;
 }
 
 .subscribe-form-label {
-  display: flex;
-  margin: 0 auto;
+  display: block;
+  width: 100%;
 }
 .subscribe-form-input {
   display: block;
-  width: 398px;
+  width: 100%;
+  max-width: 398px;
   height: 40px;
   padding-left: 16px;
   padding-top: 8px;
@@ -186,7 +187,6 @@
 @media screen and (min-width: 768px) {
   .page-footer {
     padding: 96px 0;
-    max-width: 768px;
   }
 
   .footer-container {
@@ -226,10 +226,8 @@
 @media screen and (min-width: 1200px) {
   .page-footer {
     padding: 100px 0;
-    max-width: 1440px;
   }
   .footer-container {
-    max-width: 1128px;
     flex-wrap: nowrap;
     gap: 0;
     padding-left: 0;

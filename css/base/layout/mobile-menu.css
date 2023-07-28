@@ -11,6 +11,10 @@
     transition-property: opacity, visibility;
     transition-duration: var(--transition-dur);
     transition-timing-function: var(--transition-func);
+    background-color: var(--modal-background);
+    box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08),
+      0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+      0px 2px 1px 0px rgba(46, 47, 66, 0.08);
   }
   .mobile-menu-window.is-open {
     opacity: 1;
@@ -18,10 +22,8 @@
     pointer-events: auto;
   }
   .mobile-menu-form {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 428px;
+    width: 100%;
+    max-width: 428px;
     min-height: 100%;
     padding-left: 40px;
     padding-right: 35px;
@@ -30,10 +32,6 @@
     transition-property: transform;
     transition-duration: var(--transition-dur);
     transition-timing-function: var(--transition-func);
-    background-color: var(--modal-background);
-    box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08),
-      0px 1px 1px 0px rgba(46, 47, 66, 0.16),
-      0px 2px 1px 0px rgba(46, 47, 66, 0.08);
   }
 
   .mobile-menu-close-button {

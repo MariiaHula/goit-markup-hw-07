@@ -4,7 +4,6 @@
   justify-content: center;
   align-items: center;
   margin: 0 auto;
-  max-width: 428px;
   padding: 96px 0;
   background-color: var(--light);
 }
@@ -94,9 +93,6 @@
 }
 
 @media screen and (min-width: 768px) {
-  .section-team {
-    max-width: 736px;
-  }
   .section-title-team {
     flex-direction: row;
     gap: 64px 24px;
@@ -105,9 +101,6 @@
 }
 
 @media screen and (min-width: 1200px) {
-  .section-team {
-    max-width: 1440px;
-  }
   .section-title-team {
     column-gap: 24px;
     flex-wrap: nowrap;

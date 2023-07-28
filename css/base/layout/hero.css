@@ -1,4 +1,7 @@
 .hero {
+  width: 100%;
+  max-width: 428px;
+  margin: 0 auto;
   background-color: var(--dark);
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
@@ -81,6 +84,8 @@
 
 @media screen and (min-width: 768px) {
   .hero {
+    max-width: 736px;
+    margin: 0 auto;
     background-color: var(--dark);
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
@@ -114,6 +119,8 @@
 
 @media screen and (min-width: 1200px) {
   .hero {
+    max-width: 1158px;
+    margin: 0 auto;
     background-color: var(--dark);
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
@@ -121,7 +128,7 @@
       ),
       url('../../../images/main-page/backgrounds/desktop-bcg-1x.png');
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: auto auto;
     background-position: center;
   }
 
@@ -139,6 +146,5 @@
 
   .hero-container {
     padding: 188px 0;
-    max-width: 1440px;
   }
 }
