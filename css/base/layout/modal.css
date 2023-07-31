@@ -66,13 +66,11 @@
   transition-timing-function: var(--transition-func);
 }
 
-.close-button:hover,
 .close-button:focus {
   background-color: var(--pressed-state);
   border: none;
 }
 
-.close-button:hover .close-back-icon,
 .close-button:focus .close-back-icon {
   fill: var(--white-background);
 }
@@ -248,12 +246,24 @@
   transition-timing-function: var(--transition-func);
 }
 
-.review-form-btn:focus,
-.review-form-btn:hover {
+.review-form-btn:focus {
   background-color: var(--pressed-state);
 }
-ю@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .backdrop {
     max-width: 408px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .close-button:hover {
+    background-color: var(--pressed-state);
+    border: none;
+  }
+  .close-button:hover .close-back-icon {
+    fill: var(--white-background);
+  }
+  .review-form-btn:hover {
+    background-color: var(--pressed-state);
   }
 }
