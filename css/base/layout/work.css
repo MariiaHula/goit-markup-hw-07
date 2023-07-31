@@ -1,12 +1,11 @@
-.title-work {
-  display: none;
+@media screen and (max-width: 1199px) {
+  .title-work {
+    display: none;
+  }
+  .section-title-works {
+    display: none;
+  }
 }
-.section-title-works {
-  display: none;
-}
-
-/* @media screen and (min-width: 768px) {
-} */
 
 @media screen and (min-width: 1200px) {
   .title-work {

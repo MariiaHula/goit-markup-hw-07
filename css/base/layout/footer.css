@@ -37,7 +37,7 @@
 .logo-sd-word {
   color: var(--light);
 }
-.logo-link:hover,
+
 .logo-link:focus {
   color: var(--pressed-state);
 }
@@ -92,7 +92,6 @@
   transition-timing-function: var(--transition-func);
 }
 
-.social-media:hover,
 .social-media:focus {
   background-color: var(--success);
 }
@@ -179,7 +178,7 @@
 .subscribe-icon {
   margin-left: 16px;
 }
-.subscribe-button:hover,
+
 .subscribe-button:focus {
   background-color: var(--pressed-state);
 }
@@ -238,6 +237,15 @@
   }
   .footer-media-block {
     margin-right: 80px;
+  }
+  .logo-link:hover {
+    color: var(--pressed-state);
+  }
+  .social-media:hover {
+    background-color: var(--success);
+  }
+  .subscribe-button:hover {
+    background-color: var(--pressed-state);
   }
 }
 /* ++++++++++++++++++++++++++++++++++++ */

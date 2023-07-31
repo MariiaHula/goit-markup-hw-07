@@ -51,7 +51,6 @@
   color: var(--dark);
 }
 
-.logo:hover,
 .logo:focus {
   color: var(--pressed-state);
 }
@@ -140,11 +139,10 @@
     background-color: var(--pressed-state);
   }
 
-  .link-nav:hover,
   .link-nav:focus {
     color: var(--pressed-state);
   }
-  .link-auth:hover,
+
   .link-auth:focus {
     color: var(--pressed-state);
   }
@@ -154,7 +152,9 @@
   .logo {
     margin-right: 76px;
   }
-
+  .logo:hover {
+    color: var(--pressed-state);
+  }
   .auth-nav {
     flex-direction: row;
   }
@@ -168,5 +168,11 @@
 
   .auth-nav .link {
     font-size: 16px;
+  }
+  .link-nav:hover {
+    color: var(--pressed-state);
+  }
+  .link-auth:hover {
+    color: var(--pressed-state);
   }
 }

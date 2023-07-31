@@ -84,7 +84,6 @@
   transition-timing-function: var(--transition-func);
 }
 
-.team-social-media:hover,
 .team-social-media:focus {
   background-color: var(--pressed-state);
 }
@@ -104,5 +103,8 @@
   .section-title-team {
     column-gap: 24px;
     flex-wrap: nowrap;
+  }
+  .team-social-media:hover {
+    background-color: var(--pressed-state);
   }
 }
